@@ -30,19 +30,19 @@ body::before {
     z-index: -1;
 }
 
-.dropdown{
+.header_list-links-dropdown{
     display: none;
 }
 
-li:hover ul.dropdown{
+.header_list-links-equipes:hover ul.header_list-links-dropdown{
     display: block;
 }
 
-.dropdown2{
+.header_list-links-dropdown2{
     display: none;
 }
 
-.two:hover ul.dropdown2{
+.header_list-links-equipes-filles:hover ul.header_list-links-dropdown2{
     display: block;
 }
 
@@ -56,7 +56,12 @@ header {
     font-size: 1.5rem;
 }
 
-.logo1{
+a:hover{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.header_logo{
     width: 5rem;
 }
 
