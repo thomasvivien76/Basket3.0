@@ -127,3 +127,8 @@ nav ul li a {
         display: block;
     }
 }
+
+.image-u7{
+    width: 40%;
+    border-radius: 5px;
+}
