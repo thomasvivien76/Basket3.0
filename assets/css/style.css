@@ -18,7 +18,7 @@ body{
 
 body::before {
     content: "";
-    background-image: url("./67025d966079b_LOGOASSDS.png"); /* Remplacez par l'URL de votre image */
+    background-image: url("../images/67025d966079b_LOGOASSDS.png"); /* Remplacez par l'URL de votre image */
     background-size: cover;
     background-position: center;
     position: absolute;
