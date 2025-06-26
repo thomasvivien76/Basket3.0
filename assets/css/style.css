@@ -132,3 +132,22 @@ nav ul li a {
     width: 40%;
     border-radius: 5px;
 }
+
+/*liste équipes */
+#nav_equipe li a {
+    display: flex;
+    color: rgb(84, 75, 75);
+    line-height: 1em;
+    padding: 4px 0;
+    text-align: center;
+}
+#nav_equipe li a:hover, #nav_equipe li a:focus, #nav_equipe li a:active{
+    background: #f0590d;
+}
+#nav_equipe_a{
+    display: block;
+    border: 2px solid;
+    border-radius: 5px;
+    width: 11em;
+    text-decoration: none;
+}
