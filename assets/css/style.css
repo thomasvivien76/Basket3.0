@@ -138,16 +138,14 @@ nav ul li a {
     display: flex;
     color: rgb(84, 75, 75);
     line-height: 1em;
-    padding: 4px 0;
-    text-align: center;
+    padding: 4px 4px;
 }
 #nav_equipe li a:hover, #nav_equipe li a:focus, #nav_equipe li a:active{
     background: #f0590d;
 }
 #nav_equipe_a{
-    display: block;
-    border: 2px solid;
-    border-radius: 5px;
+    display: ;
+    
     width: 11em;
     text-decoration: none;
 }
