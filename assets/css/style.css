@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    height: 100%;
+}
 
 body{
     background: linear-gradient(to top, red, yellow);
@@ -14,6 +17,8 @@ body{
     font-family: Arial, sans-serif;
     color: black;
     font-size: 1.3rem;
+    min-height: 100%;
+    position: relative;
 }
 
 body::before {
@@ -148,4 +153,24 @@ nav ul li a {
     
     width: 11em;
     text-decoration: none;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+   
+}
+
+.footer_ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    display: flex;
+    padding: 1rem;
+    
+
 }
