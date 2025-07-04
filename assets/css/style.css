@@ -19,6 +19,7 @@ body{
     font-size: 1.3rem;
     min-height: 100%;
     position: relative;
+    padding-bottom: 5em;
 }
 
 body::before {
@@ -67,7 +68,7 @@ a:hover{
 }
 
 .header_logo{
-    width: 5rem;
+    width: 8rem;
 }
 
 nav ul {
@@ -175,6 +176,31 @@ footer{
     padding: 1rem;
     
 
+}
+
+/*contact*/
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 1rem;
+}
+
+.contact_li{
+    
+}
+
+.contact_a{
+    text-decoration: none;
+    justify-content: ;
+    align-items: ;
+    margin: 1rem;
+}
+
+img{
+    vertical-align: middle;
+    padding: 1rem;
 }
 
 /*diapo*/
