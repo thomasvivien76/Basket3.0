@@ -1,3 +1,4 @@
+/*menu burger*/
 document.getElementById('mobile-menu').addEventListener('click', function() {
     const nav = document.querySelector('nav');
     nav.classList.add('active');
