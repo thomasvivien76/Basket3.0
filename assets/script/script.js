@@ -9,7 +9,7 @@ document.getElementById('close-menu').addEventListener('click', function() {
     nav.classList.remove('active');
 });
 
-/*diapo*/
+/*diapo
 let slideIndex = 0;
 showSlides();
 
@@ -50,4 +50,4 @@ function currentSlide(n) {
     slideIndex = n - 1; // Ajuste l'index pour la fonction showSlides
     showSlides();
 }
-
+*/
