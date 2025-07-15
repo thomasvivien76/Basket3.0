@@ -132,27 +132,43 @@ nav ul li a {
     .close-toggle {
         display: block;
     }
+
+    
+
 }
 
 /*liste équipes */
-#nav_equipe li a {
+@media (max-width: 768px) {
+    #nav_equipe  {
+        flex-direction: column;
+    }
+}
+
+#nav_equipe  {
+    /*line-height: 3em;
+    /*background-image: url(/assets/images/photos_equipes/Filles/U11F_coach_Emma.webp);
+    background-size: 100% 100%;*/
     display: flex;
-    color: rgb(240, 136, 10);
-    line-height: 3em;
-    padding: 4px 4px;
+    flex-direction: ;
+    text-decoration: none;
     margin: 1rem;
-    width: 15%;
+    padding: 4px 4px;
+    color: rgb(240, 136, 10);
+    list-style: none;    
+}
+
+.bouton_U13F {
     border: solid;
     border-radius: 10px;
-    background-image: url(/assets/images/photos_equipes/Filles/U11F_coach_Emma.webp);
-    background-size: 100% 100%;
-    text-decoration: none;
+    width: %;
+    
 }
 
 
 #nav_equipe li a:hover, #nav_equipe li a:focus, #nav_equipe li a:active{
     background: #f0590d;
 }
+
 
 
 /*footer*/
