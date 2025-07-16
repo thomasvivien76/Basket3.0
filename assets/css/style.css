@@ -132,23 +132,20 @@ nav ul li a {
     .close-toggle {
         display: block;
     }
-
-    
-
-}
-
-/*liste équipes */
-@media (max-width: 768px) {
     #nav_equipe  {
         flex-direction: column;
     }
+    
 }
+
+/*liste équipes */
 
 #nav_equipe  {
     /*line-height: 3em;
     /*background-image: url(/assets/images/photos_equipes/Filles/U11F_coach_Emma.webp);
     background-size: 100% 100%;*/
     display: flex;
+    justify-content: space-between;
     flex-direction: ;
     text-decoration: none;
     margin: 1rem;
@@ -236,6 +233,14 @@ div{
     border-radius: 70px;
     padding: 1rem;
     width: 100%;
+    transition: transform .1s;
+}
+
+.image-u7:hover{
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    justify-content: center;
 }
 
 p{
@@ -250,3 +255,4 @@ p{
     left: 0;
     bottom: 5rem;
 }
+
