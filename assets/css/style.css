@@ -232,14 +232,14 @@ div{
 .image-u7{
     border-radius: 70px;
     padding: 1rem;
-    width: 100%;
+    width: 50%;
     transition: transform .1s;
 }
 
 .image-u7:hover{
-    -ms-transform: scale(2);
-    -webkit-transform: scale(2);
-    transform: scale(2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
     justify-content: center;
 }
 
@@ -256,3 +256,32 @@ p{
     bottom: 5rem;
 }
 
+/*modal*/
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__window {
+  position: relative;
+  background-color: white;
+  padding: 4em 2em;
+}
+
+.modal__close {
+  position: absolute;
+  top: -30px;
+  right: 0;
+}
+
+#modal:not(:target) {
+    visibility: hidden;
+    opacity: 0;
+}
