@@ -168,35 +168,14 @@ nav ul li a {
     padding: 2rem;
 }
 
-.actu_div{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    padding: 1rem;
-    
-}
-
-.actu_a{
-    display: flex;
-    justify-content: center;
-}
-
 .image_actu{
-    border-radius: 70px;
     padding: 1rem;
-    width: 50%;
+    width: 80%;
     transition: transform .1s;
 }
 
-.image_actu:hover{
-    -ms-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    justify-content: center;
-}
-
 p{
-    width: 30%;
+    width: 60%;
     padding: 1rem;
     text-align : justify;
 }
@@ -205,6 +184,8 @@ p{
 /*carroussel*/
 .gallery {
     display: flex;
+    width: 40%;
+    flex-wrap: wrap ;
     gap: 10px;
     cursor: pointer;
 }
