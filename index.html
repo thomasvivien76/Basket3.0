@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASSDS</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style_index.css">
     <link rel="icon" href="./assets/images/67025d966079b_LOGOASSDS.ico" type="image/x-icon">
 </head>
 <body id="main_page">
@@ -28,101 +28,79 @@
             </ul>
         </nav>
     </header>
+
     <section>
         <h1>Association Sportive Saint Denis de Sanvic</h1>
         <br>
-        <ul class="nav_equipe" id="nav_equipe">
-            <li><a id="nav_equipe" href="#actu_un"><img class="bouton_U13F" src="/assets/images/photos_equipes/Gars/Seniors_gars_equipes1&2_Coach_Guillaume_F2.JPG" width=100px height="70px" alt="Séniors Gars équipes 1&2">Séniors Gars <br> Equipes 1&2</a></li>
-            <li><a id="nav_equipe" href="#actu_deux"><img class="bouton_U13F" src="/assets/images/photos_equipes/Gars/U15G_tournoi.jpg" width=100px height="70px" alt="U13F">Tournoi <br> U15G</a></li>
-            <li><a id="nav_equipe" href="#actu_trois"><img class="bouton_U13F" src="/assets/images/504352199_18083422399686523_5313589726276229105_n.webp" width=100px height="70px" alt="U15F">Portes <br> Ouvertes</a></li>
-            <li><a id="nav_equipe" href="#actu_quatre"><img class="bouton_U13F" src="/assets/images/504437994_18083422342686523_2294743079070309623_n.webp" width=100px height="70px" alt="U18F">Rejoins <br>nos équipes</a></li>
+        <ul class="nav_equipe" id="nav_actu">
+            <li><a id="nav_actu" href="#actu_un"><img class="bouton_image" src="/assets/images/photos_equipes/Gars/Seniors_gars_equipes1&2_Coach_Guillaume_F2.JPG" width=100px height="70px" alt="Séniors Gars équipes 1&2">Séniors Gars <br> Equipes 1&2</a></li>
+            <li><a id="nav_actu" href="#actu_deux"><img class="bouton_image" src="/assets/images/photos_equipes/Gars/U15G_tournoi.jpg" width=100px height="70px" alt="U13F">Tournoi <br> U15G</a></li>
+            <li><a id="nav_actu" href="#actu_trois"><img class="bouton_image" src="/assets/images/504352199_18083422399686523_5313589726276229105_n.webp" width=100px height="70px" alt="U15F">Portes <br> Ouvertes</a></li>
+            <li><a id="nav_actu" href="#actu_quatre"><img class="bouton_image" src="/assets/images/504437994_18083422342686523_2294743079070309623_n.webp" width=100px height="70px" alt="U18F">Rejoins <br>nos équipes</a></li>
         </ul>
-        <section id="actu_un" class="equipe">
+
+        <section id="actu_un" class="actu">
             <p>Séniors garçons équipe 1 & 2, championnes départementale, accède au niveau supérieur: <br>
                 DM1 et DM4 )</p>
-            <div>
-                <a href="#modal"><img class="image-u7" src="/assets/images/photos_equipes/Gars/Seniors_gars_equipes1&2_Coach_Guillaume_F.webp" alt="U11F"></a>
-            </div>
-            <div id="modal">
-                <div class="modal_window">
-                    <a class="modal_close" href="#">X</a>
-                    <img src="/assets/images/photos_equipes/Gars/Seniors_gars_equipes1&2_Coach_Guillaume_F.webp" alt="">
+                <!-- Image principale qui ouvre le carrousel -->
+            <div class="gallery">
+                <img src="/assets/images/photos_equipes/Gars/Seniors_gars_equipes1&2_Coach_Guillaume_F.webp" alt="équipes masculines séniors 1 & 2" class="gallery-img" onclick="openCarousel(0)">
+                <img src="/assets/images/photos_equipes/Gars/Seniors_gars_equipes1&2_Coach_Guillaume_N.JPG" alt="équipes masculines séniors 1 & 2" class="gallery-img" onclick="openCarousel(1)">           </div>
+            <!-- Carrousel (masqué par défaut) -->
+            <div id="carousel" class="carousel">
+                <span class="close" onclick="closeCarousel()">&times;</span>
+                <div class="carousel-content">
+                    <img id="carousel-img" src="" alt="Image en grand">
                 </div>
+                <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+                <a class="next" onclick="changeImage(1)">&#10095;</a>
             </div>
         </section>
         
-    </section>
-    <!--
-    <section class="slideshow-container">
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="/assets/images/504352199_18083422399686523_5313589726276229105_n.webp" style="width:100%">
-            <div class="text">Tu veux nous rejoindre, contact Guillaume au 0666731208</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="/assets/images/504437994_18083422342686523_2294743079070309623_n.webp" style="width:100%">
-            <div class="text">Merveilleux</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="./assets/images/photos_equipes/Filles/U15F_coach_Cecile&Micka_F2.webp" style="width:100%">
-            <div class="text">Splendide</div>
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-    </section>
-    <br>
-
-    <section style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </section>-->
-    <section id="actu_deux" class="equipe">
+        <section id="actu_deux" class="actu">
         
-        <div>
-            <img class="image-u7" src="/assets/images/photos_equipes/Gars/U15G_tournoi.jpg" alt="U15G">
-            <img class="image-u7" src="/assets/images/photos_equipes/Gars/U15G_tournoi_2.jpg" alt="U15G">
-            <img class="image-u7" src="/assets/images/photos_equipes/Gars/U15G_tournoi_3.jpg" alt="U15G">
-            <img class="image-u7" src="/assets/images/photos_equipes/Gars/U15G_tournoi_4.jpg.jpg" alt="U15G">
-            <img class="image-u7" src="/assets/images/photos_equipes/Gars/U15G_tournoi_5.jpg.jpg" alt="U15G">
-            <img class="image-u7" src="/assets/images/photos_equipes/Gars/U15G_tournoi_6.jpg.jpg" alt="U15G">
-            <img class="image-u7" src="/assets/images/photos_equipes/Gars/U15G_tournoi_7.jpg.jpg" alt="U15G">
-            <img class="image-u7" src="/assets/images/photos_equipes/Gars/U15G_tournoi_8.jpg" alt="U15G">
-            <img class="image-u7" src="/assets/images/photos_equipes/Gars/U15G_tournoi_9.jpg.jpg" alt="U15G">
-        </div>
-        <p>U15 Garçon etaient en tournois a Douvres-la-Délivrande ce week-end, voici le résumé :
-            <br><br>
-            Nos jeunes ont passé deux jours à Douvres-la-Délivrande pour disputer un tournoi d’un niveau relevé, réunissant principalement des équipes de niveau Région, Élite Région, et même une formation U15 France (le CBC) !
-            Après deux belles victoires face à Douvres(2) puis Mondeville, ils se sont inclinés contre le CBC (Élite Région). Grâce à ces deux succès, ils ont accédé à la poule haute du tournoi.
-            La suite s’est révélée plus difficile face à des équipes aux gabarits impressionnants comme Fougères, Pacy/Ménilles, et les U15 France du CBC. Mais nos jeunes ont vu ces confrontations comme une chance unique de se mesurer à des adversaires qu’ils n’auraient jamais affrontés autrement.
-            Contre le CBC(1), bien lancé après une victoire face à l’ASSDS, nos joueurs ont répondu avec détermination, infligeant un 8-0 aux Caennais, forçant leur coach à prendre un temps mort pour recadrer son équipe ! Même si la suite du match fut plus compliquée, nos jeunes sont sortis du terrain avec la satisfaction d’avoir tout donné, et la fierté de leurs coachs pour leur combativité exemplaire.
-            Lors du match de classement face à Bernay, les coachs en ont profité pour faire tourner l’effectif dans une ambiance toujours aussi géniale. Nos U15(1) terminent à une belle 8e place sur 16 dans un tournoi aussi exigeant que parfaitement organisé.
-            Bravo à eux !
-            <br><br>
-            Le message des coachs :
-            "C'était un superbe tournoi, avec un groupe qui a été agréable tout au long de la saison. Passer deux jours à Douvres tous ensemble, c'était la conclusion idéale pour cette année sportive très aboutie.
-            Nous sommes partis avec un effectif comportant six joueurs de première année, avons dominé les qualifications en battant de belles équipes comme le STB Le Havre(2) ou Gravenchon, et avons réussi à nous qualifier en championnat Région 2. Une vraie réussite.
-            C’est l’aboutissement d’une belle progression pour des jeunes sérieux et investis aux entraînements. Merci à tous !"
-            Merci également à nos deux coachs, Yvon et Max, pour ce beau week-end sportif avec l'équipe🏀</p>
+            <div class="gallery">
+                <img src="/assets/images/photos_equipes/Gars/U15G_tournoi.jpg" alt="U15Garçons tournoi" class="gallery-img" onclick="openCarousel(2)">
+                <img src="/assets/images/photos_equipes/Gars/U15G_tournoi_2.jpg" alt="U15Garçons tournoi" class="gallery-img" onclick="openCarousel(3)">
+                <img src="/assets/images/photos_equipes/Gars/U15G_tournoi_3.jpg" alt="U15Garçons tournoi" class="gallery-img" onclick="openCarousel(4)">
+                <img src="/assets/images/photos_equipes/Gars/U15G_tournoi_4.jpg.jpg" alt="U15Garçons tournoi" class="gallery-img" onclick="openCarousel(5)">
+                <img src="/assets/images/photos_equipes/Gars/U15G_tournoi_5.jpg.jpg" alt="U15Garçons tournoi" class="gallery-img" onclick="openCarousel(6)">
+                <img src="/assets/images/photos_equipes/Gars/U15G_tournoi_6.jpg.jpg" alt="U15Garçons tournoi" class="gallery-img" onclick="openCarousel(7)">
+                <img src="/assets/images/photos_equipes/Gars/U15G_tournoi_7.jpg.jpg" alt="U15Garçons tournoi" class="gallery-img" onclick="openCarousel(8)">
+                <img src="/assets/images/photos_equipes/Gars/U15G_tournoi_8.jpg" alt="U15Garçons tournoi" class="gallery-img" onclick="openCarousel(9)">
+                <img src="/assets/images/photos_equipes/Gars/U15G_tournoi_9.jpg.jpg" alt="U15Garçons tournoi" class="gallery-img" onclick="openCarousel(10)"> >
+            </div>
         
-    </section>
-    <section id="actu_trois" class="equipe">
-        <p>Tu veux des renseignements, tu peux joindre Guillaume au 0666731208</p>
-        <div>
-            <a href="/assets/images/504352199_18083422399686523_5313589726276229105_n.webp"><img class="image-u7" src="/assets/images/504352199_18083422399686523_5313589726276229105_n.webp" alt="U11F"></a>
-        </div>
-    </section>
-    <section id="actu_quatre" class="equipe">
-        <div>
-            <a href="/assets/images/504437994_18083422342686523_2294743079070309623_n.webp"><img class="image-u7" src="/assets/images/504437994_18083422342686523_2294743079070309623_n.webp" alt="U11F"></a>
-        </div>
-        <p>Tu veux nous rejoindre, contact Guillaume au 0666731208</p>
-        
+            <p>U15 Garçon etaient en tournois a Douvres-la-Délivrande ce week-end, voici le résumé :
+                <br><br>
+                Nos jeunes ont passé deux jours à Douvres-la-Délivrande pour disputer un tournoi d’un niveau relevé, réunissant principalement des équipes de niveau Région, Élite Région, et même une formation U15 France (le CBC) !
+                Après deux belles victoires face à Douvres(2) puis Mondeville, ils se sont inclinés contre le CBC (Élite Région). Grâce à ces deux succès, ils ont accédé à la poule haute du tournoi.
+                La suite s’est révélée plus difficile face à des équipes aux gabarits impressionnants comme Fougères, Pacy/Ménilles, et les U15 France du CBC. Mais nos jeunes ont vu ces confrontations comme une chance unique de se mesurer à des adversaires qu’ils n’auraient jamais affrontés autrement.
+                Contre le CBC(1), bien lancé après une victoire face à l’ASSDS, nos joueurs ont répondu avec détermination, infligeant un 8-0 aux Caennais, forçant leur coach à prendre un temps mort pour recadrer son équipe ! Même si la suite du match fut plus compliquée, nos jeunes sont sortis du terrain avec la satisfaction d’avoir tout donné, et la fierté de leurs coachs pour leur combativité exemplaire.
+                Lors du match de classement face à Bernay, les coachs en ont profité pour faire tourner l’effectif dans une ambiance toujours aussi géniale. Nos U15(1) terminent à une belle 8e place sur 16 dans un tournoi aussi exigeant que parfaitement organisé.
+                Bravo à eux !
+                <br><br>
+                Le message des coachs :
+                "C'était un superbe tournoi, avec un groupe qui a été agréable tout au long de la saison. Passer deux jours à Douvres tous ensemble, c'était la conclusion idéale pour cette année sportive très aboutie.
+                Nous sommes partis avec un effectif comportant six joueurs de première année, avons dominé les qualifications en battant de belles équipes comme le STB Le Havre(2) ou Gravenchon, et avons réussi à nous qualifier en championnat Région 2. Une vraie réussite.
+                C’est l’aboutissement d’une belle progression pour des jeunes sérieux et investis aux entraînements. Merci à tous !"
+                Merci également à nos deux coachs, Yvon et Max, pour ce beau week-end sportif avec l'équipe🏀</p>
+            
+        </section>
+        <section id="actu_trois" class="equipe">
+            <p>Tu veux des renseignements, tu peux joindre Guillaume au 0666731208</p>
+            <div>
+                <img class="image-u7" src="/assets/images/504352199_18083422399686523_5313589726276229105_n.webp" alt="U15G">
+            </div>
+            
+        </section>
+        <section id="actu_quatre" class="equipe">
+            <div>
+                <img class="image-u7" src="/assets/images/504437994_18083422342686523_2294743079070309623_n.webp" alt="U11F">
+            </div>
+            <p>Tu veux nous rejoindre, contact Guillaume au 0666731208</p>
+            
+        </section>
     </section>
     <div class="haut">
         <a href="#main_page"><img src="/assets/images/arrow_up_bold_box_icon_136930.ico" alt="flèche haut"></a>
