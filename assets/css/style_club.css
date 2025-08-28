@@ -138,24 +138,68 @@ nav ul li a {
     
 }
 
+/*club*/
 
-/*contact*/
+.club{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
 
-.contact{
+/*Organigramme*/
+
+.organigramme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.org-chart {
     display: flex;
     flex-direction: column;
-    list-style: none;
-    padding: 1rem;
+    align-items: center;
 }
 
-.contact_a{
-    text-decoration: none;
-    margin: 1rem;
+.node-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
 }
 
-.logo{
-    vertical-align: middle;
-    padding: 1rem;
+.node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: ;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 120px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid white;
+}
+
+.president {
+    background-color: ;
+    font-weight: ;
+}
+
+.manager {
+    background-color: ;
+}
+
+.employee {
+    background-color: ;
 }
 
 /*footer*/
