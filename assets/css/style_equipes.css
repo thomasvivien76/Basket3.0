@@ -144,33 +144,43 @@ nav ul li a {
 #nav_equipe {
     display: flex;
     flex-wrap: wrap;
+    list-style: none;   
+}
+
+#nav_equipe_a{
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     text-decoration: none;
     margin: 1rem;
     padding: 4px 4px;
-    color: rgb(240, 136, 10);
-    list-style: none;    
+    color: rgb(240, 60, 10);
+}
+
+.bouton_texte{
+    text-align: center;
+
 }
 
 .bouton_image {
     border: solid;
-    border-radius: 10px;    
+    border-radius: 10px;
 }
 
 
 #nav_actu li a:hover, #nav_equipe li a:focus, #nav_equipe li a:active{
-    background: #f0590d;
+    background: #f0590d; 
 }
 
 /*Actu*/
 
 .equipe{
     display: flex;
-    padding: 2rem;
+    padding: 4rem;
 }
 
-p{
-    width: 60%;
+.texte{
+    width: 100%;
     padding: 1rem;
     text-align : justify;
 }
@@ -185,8 +195,8 @@ p{
 }
 
 .gallery-img {
-    width: 200px;
-    height: 200px;
+    width: 60%;
+    height: auto;
     border-radius: 10px;
     object-fit: cover;
 }

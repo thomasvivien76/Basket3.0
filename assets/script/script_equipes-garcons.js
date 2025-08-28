@@ -13,12 +13,28 @@ document.getElementById('close-menu').addEventListener('click', function() {
 //CAROUSSEL
 // Liste des images du carrousel
 const images = [
-    "/assets/images/photos_equipes/Filles/U11F_coach_Emma.webp",
-    "/assets/images/photos_equipes/Filles/U13F_coach_Berenice&Remy.jpg",
-    "/assets/images/photos_equipes/Filles/U15F_coach_Cecile&Micka_F2.webp",
-    "/assets/images/photos_equipes/Filles/U15F_coach_Cecile&Micka_N1.webp",
-    "/assets/images/photos_equipes/Filles/U18F_coach_Tiffany&guillaume_N.webp",
-    "/assets/images/photos_equipes/Filles/U18F_coach_Tiffany&guillaume_F2.JPG"
+    "/assets/images/photos_equipes/Gars/U7&U9_Coach_Tiffany_Emma_Alan_N.JPG", 
+    "/assets/images/photos_equipes/Gars/U7&U9_Coach_Tiffany_Emma_Alan_N2.JPG",
+    "/assets/images/photos_equipes/Gars/U13G_coach_Franck_N.jpg",
+    "/assets/images/photos_equipes/Gars/U13G_coach_Franck_N3.jpg",
+    "/assets/images/photos_equipes/Gars/U15G_equipes1&2_N.jpg",
+    "/assets/images/photos_equipes/Gars/U15G_equipes1&2_N3.jpg",
+    "/assets/images/photos_equipes/Gars/U15G_equipe2_Coach_Julien_F.jpg",
+    "/assets/images/photos_equipes/Gars/U15G_equipe2_Coach_Julien_N.jpg",
+    "/assets/images/photos_equipes/Gars/U15G_equipe1_coach_Yvon&Max_F.jpg",
+    "/assets/images/photos_equipes/Gars/U15G_equipe1_coach_Yvon&Max_N.jpg",
+    "/assets/images/photos_equipes/Gars/U18G_equipe1_2_coach_Joe_N.webp",
+    "/assets/images/photos_equipes/Gars/U18G_equipe1_2_coach_Joe_F.webp",
+    "/assets/images/photos_equipes/Gars/U18G_equipe2_coach_urelien_N.webp",
+    "/assets/images/photos_equipes/Gars/U18G_equipe2_coach_Aurelien_F.webp",
+    "/assets/images/photos_equipes/Gars/U18G_equipe1_coach_Joe_N.webp",
+    "/assets/images/photos_equipes/Gars/U18G_equipe1_coach_Joe_F.webp",
+    "/assets/images/photos_equipes/Gars/Seniors_gars_equipes1&2_Coach_Guillaume_F.webp",
+    "/assets/images/photos_equipes/Gars/Seniors_gars_equipes1&2_Coach_Guillaume_N.JPG", 
+    "/assets/images/photos_equipes/Gars/Seniors_gars_equipe2_Coach_Guillaume_F.JPG",
+    "/assets/images/photos_equipes/Gars/Seniors_gars_equipe2_Coach_Guillaume_N.jpg",
+    "/assets/images/photos_equipes/Gars/Seniors_gars_equipe1_Coach_Guillaume_F3.jpg",
+    "/assets/images/photos_equipes/Gars/Seniors_gars_equipe1_Coach_Guillaume_N2.jpg"
 ];
 
 let currentIndex = 0;
