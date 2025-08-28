@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASSDS</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style_equipes.css">
     <link rel="icon" href="/assets/images/67025d966079b_LOGOASSDS.ico" type="image/x-icon">
 </head>
 <body id="main_page">
@@ -42,13 +42,22 @@
         <section id="U11F" class="equipe">
             <p>U11F :
                 (Coach -> Emma)</p>
-            <div>
-                <a href="/assets/images/photos_equipes/Filles/U11F_coach_Emma.webp"><img class="image-u7" src="/assets/images/photos_equipes/Filles/U11F_coach_Emma.webp" alt="U11F"></a>
+            <!-- Image principale qui ouvre le carrousel -->
+            <div class="gallery">
+                <img src="/assets/images/photos_equipes/Filles/U11F_coach_Emma.webp" alt="équipe féminine U11" class="gallery-img" onclick="openCarousel(0)">
+                <!-- Carrousel (masqué par défaut) -->
+            <div id="carousel" class="carousel">
+                <span class="close" onclick="closeCarousel()">&times;</span>
+                <div class="carousel-content">
+                    <img id="carousel-img" src="" alt="Image en grand">
+                </div>
+                <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+                <a class="next" onclick="changeImage(1)">&#10095;</a>
             </div>
         </section>
         <section id="U13F" class="equipe">
             <div>
-                <a href="/assets/images/photos_equipes/Filles/U13F_coach_Berenice&Remy.jpg"><img class="image-u7" src="/assets/images/photos_equipes/Filles/U13F_coach_Berenice&Remy.jpg" alt="U13F"></a>
+                <img src="/assets/images/photos_equipes/Filles/U13F_coach_Berenice&Remy.jpg" alt="équipe féminine U13" class="gallery-img" onclick="openCarousel(1)">
             </div>
             <p>U13F : Coach -> Remy et Bérénice
                 <br><br>
@@ -77,16 +86,14 @@
                 <br><br>
                 Cécile, coach u15F</p>
             <div>
-                <img class="image-u7" src="/assets/images/photos_equipes/Filles/U15F_coach_Cecile&Micka_N1.webp" alt="">
-                <img class="image-u7" src="/assets/images/photos_equipes/Filles/U15F_coach_Cecile&Micka_F.JPG" alt="">
-                <img class="image-u7" src="/assets/images/photos_equipes/Filles/U15F_coach_Cecile&Micka_F2.webp" alt="">
+                <img src="/assets/images/photos_equipes/Filles/U15F_coach_Cecile&Micka_F2.webp" alt="équipe féminine U13" class="gallery-img" onclick="openCarousel(2)">
+                <img src="/assets/images/photos_equipes/Filles/U15F_coach_Cecile&Micka_N1.webp" alt="équipe féminine U13" class="gallery-img" onclick="openCarousel(3)">
             </div>
         </section>
         <section id="U18F" class="equipe">
             <div>
-                <img class="image-u7" src="/assets/images/photos_equipes/Filles/U18F_coach_Tiffany&guillaume_F.jpg" alt="">
-                <img class="image-u7" src="/assets/images/photos_equipes/Filles/U18F_coach_Tiffany&guillaume_F2.JPG" alt="">
-                <img class="image-u7" src="/assets/images/photos_equipes/Filles/U18F_coach_Tiffany&guillaume_N2.webp" alt="">
+                <img src="/assets/images/photos_equipes/Filles/U18F_coach_Tiffany&guillaume_N.webp" alt="équipe féminine U13" class="gallery-img" onclick="openCarousel(4)">
+                <img src="/assets/images/photos_equipes/Filles/U18F_coach_Tiffany&guillaume_F2.JPG" alt="équipe féminine U13" class="gallery-img" onclick="openCarousel(5)">
             </div>
             <p>U18F : (Coach -> Guillaume et Tiffany)
                 Équipe U18F <br><br>
@@ -111,7 +118,7 @@
             <a href="#main_page"><img src="/assets/images/arrow_up_bold_box_icon_136930.ico" alt="flèche haut"></a>
         </div>
     </section>
-    <script src="/assets/script/script.js"></script>
+    <script src="/assets/script/script_equipes-filles.js"></script>
 </body>
 <footer>
     <ul class="footer_ul">

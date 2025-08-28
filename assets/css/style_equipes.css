@@ -139,10 +139,11 @@ nav ul li a {
     
 }
 
-/*liste équipes */
+/*liste actu */
 
-#nav_actu {
+#nav_equipe {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     text-decoration: none;
     margin: 1rem;
@@ -163,15 +164,9 @@ nav ul li a {
 
 /*Actu*/
 
-.actu{
+.equipe{
     display: flex;
     padding: 2rem;
-}
-
-.image_actu{
-    padding: 1rem;
-    width: 80%;
-    transition: transform .1s;
 }
 
 p{
@@ -179,7 +174,6 @@ p{
     padding: 1rem;
     text-align : justify;
 }
-
 
 /*carroussel*/
 .gallery {
@@ -275,6 +269,4 @@ footer{
 .footer{
     display: flex;
     padding: 1rem;
-    
-
 }

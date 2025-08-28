@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+/*Corps*/
+body{
+    background: linear-gradient(to top, red, yellow);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: black;
+    font-size: 1.3rem;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 5em;
+}
+
+/*logo arrière plan*/
+body::before {
+    content: "";
+    background-image: url("../images/67025d966079b_LOGOASSDS.png"); /* Remplacez par l'URL de votre image */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.1; /* Ajustez l'opacité selon vos besoins */
+    z-index: -1;
+}
+/*header : logo et */
+.header_list-links-dropdown{
+    display: none;
+}
+
+.header_list-links-equipes:hover ul.header_list-links-dropdown{
+    display: block;
+}
+
+.header_list-links-dropdown2{
+    display: none;
+}
+
+.header_list-links-equipes-filles:hover ul.header_list-links-dropdown2{
+    display: block;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 2rem;
+    background-color: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+a:hover{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.header_logo{
+    width: 8rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.close-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        height: 100vh;
+        background-color: #f0590d;
+        transition: right 0.3s ease;
+        font-size: 1.5rem;
+    }
+
+    nav.active {
+        right: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+
+    nav ul li {
+        margin: 1rem 1rem;
+    }
+
+    .close-toggle {
+        display: block;
+    }
+    #nav_equipe  {
+        flex-direction: column;
+    }
+    
+}
+
+/*liste actu */
+
+#nav_actu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-decoration: none;
+    margin: 1rem;
+    padding: 4px 4px;
+    color: rgb(240, 136, 10);
+    list-style: none;    
+}
+
+.bouton_image {
+    border: solid;
+    border-radius: 10px;    
+}
+
+
+#nav_actu li a:hover, #nav_equipe li a:focus, #nav_equipe li a:active{
+    background: #f0590d;
+}
+
+/*Actu*/
+
+.actu{
+    display: flex;
+    padding: 2rem;
+}
+
+.image_actu{
+    padding: 1rem;
+    width: 80%;
+    transition: transform .1s;
+}
+
+p{
+    width: 60%;
+    padding: 1rem;
+    text-align : justify;
+}
+
+.p_actu{
+    font-size: 3rem;
+}
+
+
+/*carroussel*/
+.gallery {
+    display: flex;
+    width: 40%;
+    flex-wrap: wrap ;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.gallery-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.carousel {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-content {
+    text-align: center;
+}
+
+#carousel-img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/*Haut*/
+.haut{
+    position: fixed;
+    left: 0;
+    bottom: 6rem;
+}
+
+
+/*footer*/
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer_ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    display: flex;
+    padding: 1rem;
+    
+
+}
